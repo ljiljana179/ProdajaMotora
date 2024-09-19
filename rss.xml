@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Prodaja Motora</title>
+        <link>http://www.tvoj-sajt.com</link>
+        <description>Najbolji motori, delovi i oprema po najpovoljnijim cenama</description>
+        <language>sr</language>
+        <copyright>Copyright 2024, Prodaja Motora</copyright>
+        <lastBuildDate><?php echo date(DATE_RSS); ?></lastBuildDate>
+
+        <item>
+            <title>Ninja</title>
+            <link>http://www.tvoj-sajt.com/ponuda-motora.html</link>
+            <description>Motocikl Ninja je jedan od najpopularnijih sportskih motora. Saznaj više o ovoj ponudi.</description>
+            <pubDate><?php echo date(DATE_RSS, strtotime("2024-01-05")); ?></pubDate>
+            <guid>http://www.tvoj-sajt.com/ponuda-motora.html#ninja</guid>
+        </item>
+
+        <item>
+            <title>Suzuki</title>
+            <link>http://www.tvoj-sajt.com/ponuda-motora.html</link>
+            <description>Suzuki motocikl sa vrhunskim performansama dostupan po sjajnoj ceni. Pogledaj detalje.</description>
+            <pubDate><?php echo date(DATE_RSS, strtotime("2024-01-10")); ?></pubDate>
+            <guid>http://www.tvoj-sajt.com/ponuda-motora.html#suzuki</guid>
+        </item>
+
+        <item>
+            <title>Motul Scooter Power</title>
+            <link>http://www.tvoj-sajt.com/ponuda-delova.html</link>
+            <description>Motul ulje visokih performansi za skutere. Saznaj više o ponudi.</description>
+            <pubDate><?php echo date(DATE_RSS, strtotime("2024-01-15")); ?></pubDate>
+            <guid>http://www.tvoj-sajt.com/ponuda-delova.html#motul-scooter</guid>
+        </item>
+
+        <item>
+            <title>Kontaktirajte nas</title>
+            <link>http://www.tvoj-sajt.com/kontakt.html</link>
+            <description>Imate pitanje? Kontaktirajte nas putem našeg sajta.</description>
+            <pubDate><?php echo date(DATE_RSS, strtotime("2024-01-20")); ?></pubDate>
+            <guid>http://www.tvoj-sajt.com/kontakt.html</guid>
+        </item>
+    </channel>
+</rss>

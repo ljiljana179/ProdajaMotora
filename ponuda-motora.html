@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponuda Motora</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+                nav{
+            margin-bottom: -3%;
+        }
+        section{
+            padding-top: 2%;
+            background-image: url('img/pozadina5.jpg');
+            background-size: cover; 
+            background-position: center;
+            position: relative; 
+        }
+        section h1{
+            color: #fff;
+        }
+        .card{
+            transition: transform 0.3s ease-in-out;
+            width: 100%; 
+            max-width: 550px; 
+            margin: 0 auto; 
+            min-height: 500px; 
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        .card img{
+            height: 50%;
+            object-fit: cover;
+        }
+        .card .card-body{
+            flex-grow: 1; 
+            padding: 20px; 
+        }
+        footer{
+            margin-top: -3%;
+        }
+        .btn-custom {
+            font-size: 100%; 
+            padding: 10px 20px; 
+            background-color: #f89f3a; 
+            color: #fff; 
+        }
+        .btn-custom:hover {
+            background-color: #d1842b; 
+        } 
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Motori</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="Prodaja Motora.html">Početna</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="ponuda-motora.html">Motori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponuda-opreme.html">Oprema</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponuda-delova.html">Delovi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="autor.html">O Autoru</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ponuda Motora -->
+    <section class="my-5 min-vh-100">
+        <div class="container">
+            <h1 class="text-center">Naša Ponuda Motora</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/motor1.jpg" class="card-img-top" alt="Motor 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ninja</h5>
+                            <a href="#" class="btn btn-custom">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/motor2.jpg" class="card-img-top" alt="Motor 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Suzuki</h5>
+                            <a href="#" class="btn btn-custom">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/motor3.jpg" class="card-img-top" alt="Motor 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Honda</h5>
+                            <a href="#" class="btn btn-custom">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/motor4.jpg" class="card-img-top" alt="Motor 2">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW</h5>
+                            <a href="#" class="btn btn-custom">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/motor5.jpg" class="card-img-top" alt="Motor 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Aprilia</h5>
+                            <a href="#" class="btn btn-custom">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+        <div class="container">
+            <div class="row">
+                <!-- Sekcija sa društvenim mrežama -->
+                <div class="col-md-4 mb-3">
+                    <h5>Pratite nas</h5>
+                    <a href="https://facebook.com" class="text-white mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" class="text-white mr-3">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" class="text-white mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="rss.xml" class="text-white mr-3">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                    <a href="sitemap.xml" class="text-white">
+                        <i class="fas fa-sitemap"></i>
+                    </a>
+                </div>
+    
+                <!-- Sekcija sa radnim vremenom -->
+                <div class="col-md-4 mb-3">
+                    <h5>Radno vreme</h5>
+                    <p>Pon-Pet: 09:00 - 18:00</p>
+                    <p>Subota: 09:00 - 14:00</p>
+                    <p>Nedelja: Zatvoreno</p>
+                </div>
+    
+                <!-- Sekcija sa kontakt informacijama -->
+                <div class="col-md-4 mb-3">
+                    <h5>Kontakt informacije</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Adresa: Bulevar Kralja Aleksandra 123, Beograd, Srbija</p>
+                    <p><i class="fas fa-phone"></i> Telefon: +381 11 1234567</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@motorshop.rs</p>
+                </div>
+            </div>
+        <div class="container text-center">
+            <small>&copy; 2024 Ponuda Motora. Sva prava zadržana.</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

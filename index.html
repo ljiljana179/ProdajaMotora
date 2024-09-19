@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="srb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <title>Prodaja Motora</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom stilovi */
+        body {
+            padding-top: 56px;
+        }
+        .btn-second{
+            background-color: #f89f3a; 
+            color: #fff;
+        }
+        .btn-second:hover {
+            background-color: #d1842b; 
+        }
+        #motori {
+            background-image: url('img/pozadina4.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            position: relative; 
+            padding: 90px 0; 
+            margin-left: -1%;
+            margin-right: -0.8%;
+        }
+
+        #motori h2 {
+            margin-bottom: 40px;
+            font-size: 300%;
+            color: #fff;
+        }
+
+        .motor-card {
+            transition: transform 0.3s ease-in-out;
+            width: 100%; 
+            max-width: 550px; 
+            margin: 0 auto; 
+            min-height: 600px; 
+            display: flex;
+            flex-direction: column;
+        }
+        .motor-card img {
+            height: 60%;
+            object-fit: cover;
+        }
+
+        .motor-card .card-body {
+            flex-grow: 1; 
+            padding: 20px; 
+        }
+
+        .card-title {
+            font-size: 200%; 
+        }
+        .card-text {
+            font-size: 200%; 
+        }
+        .btn-custom {
+            font-size: 150%; 
+            padding: 10px 20px; 
+            background-color: #f89f3a; 
+            color: #fff; 
+        }
+        .btn-custom:hover {
+            background-color: #d1842b; 
+        } 
+
+        .container-ponuda{
+            margin-top: -5%;
+        }
+
+         .header-bg {
+            background-image: url('img/pozadina.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            position: relative; 
+            color: white; 
+        }
+
+        .header-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .header-bg .container {
+            position: relative;
+            z-index: 2; 
+        }
+        .navbar-brand{
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img class="navbar-brand" src="img/logo.png"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponuda-motora.html">Motori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponuda-opreme.html">Oprema</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ponuda-delova.html">Delovi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="autor.html">O Autoru</a></li>
+                    <li class="nav-item"><button class="btn btn-second" data-toggle="modal" data-target="#loginModal">Prijava</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg d-flex align-items-center justify-content-center text-center py-5 mb-4 min-vh-100">
+        <div class="container">
+            <h1 class="font-weight-light">Dobrodošli na našu stranicu za prodaju motora</h1>
+            <p class="lead">Najbolji motori po najpovoljnijim cenama</p>
+        </div>
+    </header>
+
+    <!-- Ponude -->
+    <div class="container-fluid container-ponuda">
+
+        <section id="motori" class="my-5 min-vh-100">
+            <h2 class="text-center">Naša Ponuda</h2>
+            <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+                    <div class="card motor-card">
+                        <img class="card-img-top img-fluid" src="img/motori.jpg" alt="Motori">
+                        <div class="card-body">
+                            <h5 class="card-title">Motori</h5>
+                            <a href="ponuda-motora.html" class="btn btn-custom">Saznaj Više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+                    <div class="card motor-card">
+                        <img class="card-img-top img-fluid" src="img/delovi.png" alt="Delovi">
+                        <div class="card-body">
+                            <h5 class="card-title">Delovi</h5>
+                            <a href="ponuda-delova.html" class="btn btn-custom">Saznaj Više</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+                    <div class="card motor-card">
+                        <img class="card-img-top img-fluid" src="img/oprema.png" alt="Oprema">
+                        <div class="card-body">
+                            <h5 class="card-title">Oprema</h5>
+                            <a href="ponuda-opreme.html" class="btn btn-custom">Saznaj Više</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Kontakt  -->
+        <section id="kontakt" class="my-5">
+            <h2 class="text-center">Kontaktirajte Nas</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Ime</label>
+                            <input type="text" class="form-control" id="name" placeholder="Unesite vaše ime">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email adresa</label>
+                            <input type="email" class="form-control" id="email" placeholder="Unesite vaš email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Poruka</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Unesite vašu poruku"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Pošalji</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+ <!-- Modal za logovanje -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Prijavite se</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email adresa:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Unesite email adresu" required>
+                        <div class="invalid-feedback">Molimo unesite važeću email adresu.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Lozinka:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Unesite lozinku" required>
+                        <div class="invalid-feedback">Molimo unesite lozinku.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Prijava</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+
+        <div class="container">
+            <div class="row">
+                <!-- Sekcija sa društvenim mrežama -->
+                <div class="col-md-4 mb-3">
+                    <h5>Pratite nas</h5>
+                    <a href="https://facebook.com" class="text-white mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" class="text-white mr-3">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" class="text-white mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="rss.xml" class="text-white mr-3">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                    <a href="sitemap.xml" class="text-white">
+                        <i class="fas fa-sitemap"></i>
+                    </a>
+                </div>
+    
+                <!-- Sekcija sa radnim vremenom -->
+                <div class="col-md-4 mb-3">
+                    <h5>Radno vreme</h5>
+                    <p>Pon-Pet: 09:00 - 18:00</p>
+                    <p>Subota: 09:00 - 14:00</p>
+                    <p>Nedelja: Zatvoreno</p>
+                </div>
+    
+                <!-- Sekcija sa kontakt informacijama -->
+                <div class="col-md-4 mb-3">
+                    <h5>Kontakt informacije</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Adresa: Bulevar Kralja Aleksandra 123, Beograd, Srbija</p>
+                    <p><i class="fas fa-phone"></i> Telefon: +381 11 1234567</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@motorshop.rs</p>
+                </div>
+            </div>
+        <div class="container text-center">
+            <small>&copy; 2024 Prodaja Motora. Sva prava zadržana.</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var form = document.getElementById('loginForm');
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
